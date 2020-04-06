@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --color --hot --watch",
     "build": "webpack -d --config webpack.config",
-    "prod": "webpack -p --config webpack.config"
+    "prod": "webpack -p --config webpack.config",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "chartjs",
@@ -32,6 +33,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
+    "gh-pages": "^2.2.0",
     "html-webpack-plugin": "^4.0.4",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.13.1",
