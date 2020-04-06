@@ -1,11 +1,14 @@
-import Photos from './js/photos'
-
+import { piechart } from './js/chartjs'
+import { pie } from './js/highcharts'
 import './css/index.scss'
 
-const photos = new Photos()
-
-async function main () {
-  console.log(await photos.getPhotos())
+function drawChartJs () {
+  return piechart
 }
 
-main()
+function drawHighchart () {
+  return pie
+}
+
+drawChartJs()
+drawHighchart()

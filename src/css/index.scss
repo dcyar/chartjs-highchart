@@ -1,9 +1,23 @@
-$background: orange;
+$background: #f8f8f8;
 
 body {
   background-color: $background;
 }
 .container {
-  width: 80vm;
+  width: 80vw;
   text-align: center;
+  margin: 0 auto;
+
+  .charts {
+    display: flex;
+    // width: 600px;
+
+    .chartjs {
+      width: 50%;
+    }
+
+    .highchart {
+      width: 50%;
+    }
+  }
 }
