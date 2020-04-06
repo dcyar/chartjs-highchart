@@ -8,7 +8,7 @@
     "start": "webpack-dev-server --color --hot --watch",
     "build": "webpack -d --config webpack.config",
     "prod": "webpack -p --config webpack.config",
-    "deploy": "gh-pages -d dist"
+    "deploy": "yarn prod && gh-pages -d dist -b build"
   },
   "keywords": [
     "chartjs",
