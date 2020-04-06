@@ -26,10 +26,11 @@ module.exports = {
         loader: 'babel-loader'
       },
       {
-        test: /\.css$/,
+        test: /\.s[ac]ss$/i,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader'
+          'css-loader',
+          'sass-loader'
         ]
       },
       {
@@ -59,7 +60,8 @@ module.exports = {
       chunks: ['about']
     }),
     new MiniCssExtractPlugin({
-      filename: 'css/[name].css'
+      filename: 'css/[name].css',
+      chunkFilename: 'css/[id].css'
     }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,

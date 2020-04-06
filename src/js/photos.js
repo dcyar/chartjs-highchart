@@ -1,5 +1,5 @@
 class Photos {
-  async getPhotos() {
+  async getPhotos () {
     try {
       const res = await fetch('https://jsonplaceholder.typicode.com/photos?_limit=10')
 
@@ -12,4 +12,4 @@ class Photos {
   }
 }
 
-export default Photos;
+export default Photos

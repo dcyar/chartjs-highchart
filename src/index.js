@@ -1,10 +1,10 @@
 import Photos from './js/photos'
 
-import './css/index.css'
+import './css/index.scss'
 
 const photos = new Photos()
 
-async function main() {
+async function main () {
   console.log(await photos.getPhotos())
 }
 
